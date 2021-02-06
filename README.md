@@ -1,1 +1,2 @@
-# goit-js-hw-13-image-finder
+# webpack-training
+https://paul-tech-ca.github.io/webpack-training/
