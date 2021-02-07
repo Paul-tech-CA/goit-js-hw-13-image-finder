@@ -10,7 +10,38 @@
 </head>
 
 <body>
-  <div class="square"></div>
+    <form action="" class="search-form" id="search-form">
+      <div class="form-group mx-sm-3 mb-2">
+        <input 
+        type="text" 
+        name="query" 
+        id="searchQuery"
+        autocomplete="off" 
+        placeholder="Search images..."
+        />
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Search</button>
+    </form>
+
+    <ul class="gallery js-gallery"></ul>
+
+      <button
+      type="button"
+      class="btn btn-primary button is-hidden"
+      data-action="load-more"
+      >
+      Show more
+    </button>
+
+    <!-- <button class="btn btn-primary button" type="button" disabled></button>
+        <span 
+        class="spinner-border spinner-border-sm"
+        role="status"
+        aria-hidden="true"
+        ></span>
+        Downloading... -->
+
+    
 </body>
 
 </html>
