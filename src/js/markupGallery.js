@@ -12,6 +12,7 @@ function markupGallery({ hits }) {
     });
   }
   const markup = imageTpl(hits);
+  //   console.log(markup);
   refs.galleryContainer.insertAdjacentHTML("beforeend", markup);
   success({
     text: hits[0].tags,

@@ -3,7 +3,7 @@ import refs from "./js/refs.js";
 import service from "./js/service.js";
 import markupGallery from "./js/markupGallery";
 import instance from "./js/modalWindow.js";
-import markupPicture from "./js/modalWindow.js";
+import markupPicture from "./js/markupModalWindow.js";
 
 refs.searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -38,6 +38,8 @@ document.body.addEventListener("click", (event) => {
   instance.show(() => {
     service.fetchPictures().then((pictures) => {
       markupPicture(pictures);
+      //   console.log(pictures.hits);
+      //   console.log(event.target[0]);
     });
   });
 });
