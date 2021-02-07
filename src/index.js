@@ -2,6 +2,8 @@ import "./css/style.css";
 import refs from "./js/refs.js";
 import service from "./js/service.js";
 import markupGallery from "./js/markupGallery";
+import instance from "./js/modalWindow.js";
+import markupPicture from "./js/modalWindow.js";
 
 refs.searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -27,6 +29,15 @@ refs.loadMoreBtn.addEventListener("click", () => {
     window.scrollTo({
       top: document.documentElement.offsetHeight,
       behavior: "smooth",
+    });
+  });
+});
+
+document.body.addEventListener("click", (event) => {
+  if (event.target.nodeName !== "IMG") return;
+  instance.show(() => {
+    service.fetchPictures().then((pictures) => {
+      markupPicture(pictures);
     });
   });
 });
