@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Paul-tech-CA/goit-js-hw-13-image-finder"
   },
-  "homepage": "https://paul-tech-ca.github.io/webpack-training/",
+  "homepage": "https://paul-tech-ca.github.io/goit-js-hw-13-image-finder/",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
