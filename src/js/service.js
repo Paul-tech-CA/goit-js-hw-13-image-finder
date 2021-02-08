@@ -2,20 +2,6 @@ const key = "20176699-556ee3aada6e9037c58dacf6e";
 const BASE_URL =
   "https://pixabay.com/api/?image_type=photo&orientantion=horisontal";
 
-console.log("1");
-
-// const fetchPictures = async function (searchQuery) {
-//     try {
-//   const url = `${BASE_URL}&q=${searchQuery}&page=${page}$per_page=12&key=${key}`;
-//   const response = await fetch(url);
-//   const pictures = await response.json();
-//   console.log(pictures);
-//   return pictures;
-//     } catch (error) {
-//       console.log((error) => error);
-//     }
-// };
-console.log("2");
 export default {
   page: 1,
   searchQuery: "",

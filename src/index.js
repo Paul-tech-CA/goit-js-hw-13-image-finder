@@ -2,8 +2,9 @@ import "./css/style.css";
 import refs from "./js/refs.js";
 import service from "./js/service.js";
 import markupGallery from "./js/markupGallery";
-import instance from "./js/modalWindow.js";
-import markupPicture from "./js/markupModalWindow.js";
+// import instance from "./js/modalWindow.js";
+import * as basicLightbox from "basiclightbox";
+import "basiclightbox/dist/basicLightbox.min.css";
 
 refs.searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -35,11 +36,9 @@ refs.loadMoreBtn.addEventListener("click", () => {
 
 document.body.addEventListener("click", (event) => {
   if (event.target.nodeName !== "IMG") return;
-  instance.show(() => {
-    service.fetchPictures().then((pictures) => {
-      markupPicture(pictures);
-      //   console.log(pictures.hits);
-      //   console.log(event.target[0]);
-    });
-  });
+
+  const instance = basicLightbox.create(
+    `<img class="img-lightbox" src="${event.target.dataset.source}" />`,
+  );
+  instance.show();
 });
