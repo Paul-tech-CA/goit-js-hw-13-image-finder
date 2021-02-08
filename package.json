@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Paul-tech-CA/webpack-training"
+    "url": "git+https://github.com/Paul-tech-CA/goit-js-hw-13-image-finder"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Paul-tech-CA/webpack-training"
+    "url": "https://github.com/Paul-tech-CA/goit-js-hw-13-image-finder"
   },
   "homepage": "https://paul-tech-ca.github.io/webpack-training/",
   "devDependencies": {
